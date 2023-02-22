@@ -1,0 +1,21 @@
+[package]
+name = "infinitime-resource-loader"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Load external resources into an InfiniTime device"
+repository = "https://gitlab.com/jensstein/infinitime-resource-loader"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+adafruit-ble-fs-client = { version = "0.1", features = ["btleplug-provider"] }
+clap = { version = "4.1", features = ["derive"] }
+env_logger = "0.10"
+indicatif = "0.17"
+log = "0.4"
+serde = "1.0"
+serde_json = "1.0"
+tokio = { version = "1.24.1", features = ["full"] }
+zip = "0.6"
